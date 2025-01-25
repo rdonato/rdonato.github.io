@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Adventures: Bubble Bobble Style!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #87CEEB;
+            color: #000;
+            line-height: 1.6;
+            padding: 20px;
+            font-size: 18px;
+        }
+        .game-screen {
+            background-color: #FFD700;
+            border: 10px solid #FF4500;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .bubble {
+            position: absolute;
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 50%;
+            animation: float 3s infinite alternate;
+        }
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-20px); }
+        }
+        header {
+            text-align: center;
+            border-bottom: 5px dotted #FF4500;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #FF4500;
+            font-size: 2.5em;
+            text-shadow: 3px 3px 0 #000;
+        }
+        .tech-section {
+            background-color: #87CEEB;
+            border: 5px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .skill-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .bubble-power {
+            background-color: #FF69B4;
+            border: 3px dashed #000;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .invisible-link {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-screen">
+        <!-- Invisible Mastodon link -->
+        <a rel="me" href="https://mastodon.social/@mr_dirac" class="invisible-link">Mastodon</a>
+
+        <!-- Floating bubbles -->
+        <div class="bubble" style="top: 50px; left: 50px; width: 100px; height: 100px;"></div>
+        <div class="bubble" style="top: 200px; right: 50px; width: 80px; height: 80px;"></div>
+        <div class="bubble" style="bottom: 50px; left: 100px; width: 120px; height: 120px;"></div>
+
+        <header>
+            <h1>Tech Bubble Blaster</h1>
+            <p>Transforming Complex Challenges into Playful Solutions!</p>
+        </header>
+
+        <div class="tech-section">
+            <h2>Player Skills</h2>
+            <div class="skill-grid">
+                <div>
+                    <h3>Cloud Power-Ups</h3>
+                    <ul>
+                        <li>AWS Architecture</li>
+                        <li>Salesforce Development</li>
+                        <li>Heroku Cloud Platforms</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Coding Bubbles</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <h2>Level Completed Missions</h2>
+            <div class="bubble-power">
+                <h3>Mambu Integration Boss Battle</h3>
+                <p>Trapped complex banking processes in magical integration bubbles! Deployed multi-region AWS solution.</p>
+            </div>
+            <div class="bubble-power">
+                <h3>Financial Recovery Quest</h3>
+                <p>Captured financial challenges with precision coding techniques!</p>
+            </div>
+        </div>
+
+        <div class="tech-section">
+            <h2>Achievement Bubbles</h2>
+            <p>🏆 AWS Architect | 🎮 Salesforce Master | 🚀 Tech Innovator</p>
+        </div>
+    </div>
+</body>
+</html>
